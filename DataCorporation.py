@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+
+from __future__ import division
+
+
 def number_of_friends(user):
     return len(user['friends'])
 
@@ -27,3 +31,11 @@ for first_member, second_member in friendship:
     users[second_member]['friends'].append(users[first_member])
 
 total_connections = sum(number_of_friends(user) for user in users)
+
+num_users = len(users)
+avg_connections = total_connections / num_users  #친구수 평균
+
+# (user_id, number_of_friends)로 구성된 list 생성
+num_friends_by_id = [(user["id"], number_of_friends(user)) for user in users]
+num_friends_by_id = sorted(num_friends_by_id, key=lambda user_id_num_friends: user_id_num_friends[1], reverse=True)
+print(num_friends_by_id)
