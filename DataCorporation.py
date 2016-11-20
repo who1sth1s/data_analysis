@@ -27,4 +27,3 @@ for first_member, second_member in friendship:
     users[second_member]['friends'].append(users[first_member])
 
 total_connections = sum(number_of_friends(user) for user in users)
-print(total_connections)
