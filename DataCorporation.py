@@ -41,4 +41,3 @@ num_friends_by_id = [(user["id"], number_of_friends(user)) for user in users]
 num_friends_by_id = sorted(num_friends_by_id,
                            key=lambda user_id_num_friends: user_id_num_friends[1],
                            reverse=True)
-print(num_friends_by_id)
