@@ -6,6 +6,13 @@ from __future__ import division
 def number_of_friends(user):
     return len(user['friends'])
 
+interests = [
+    (0, 'Hadoop'), (0, 'Big Data'), (0, 'HBase'), (0, 'Java'),
+    (0, 'Spark'), (0, 'Storm'), (0, 'Cassandra'), (1, 'NoSQL'),
+    
+]
+
+
 # 회사 구성원
 users = [
     {'id': 0, 'name': 'Hero', 'friends': list()},
