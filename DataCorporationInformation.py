@@ -15,7 +15,9 @@ USERS = [
 # 흥미있는 분야
 INTERESTS = [
     (0, 'Hadoop'), (0, 'Big Data'), (0, 'HBase'), (0, 'Java'),
-    (0, 'Spark'), (0, 'Storm'), (0, 'Cassandra'), (1, 'NoSQL')
+    (0, 'Spark'), (0, 'Storm'), (0, 'Cassandra'), (1, 'NoSQL'),
+    (1, 'MongoDB'), (1, 'Cassandra'), (1, 'HBase'), (1, 'Postgres'),
+    (2, 'Python'), (2, 'scikit-learn'), (2, 'scipy'), (2, 'numpy'), (2, 'statsmodels')
 ]
 
 # 친구관계
